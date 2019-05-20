@@ -39,7 +39,7 @@ public class AuthorizationServerConfigurer extends AuthorizationServerConfigurer
                 .withClient("client1")
                 .secret(PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("123456"))
                 .scopes("test").authorizedGrantTypes("authorization_code", "refresh_token")
-        .redirectUris("http://localhost:8085/login").autoApprove("true");
+        .redirectUris("http://127.0.0.1:8085/login").autoApprove("true");
     }
 
     @Override
